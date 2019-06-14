@@ -468,8 +468,8 @@ UDP Tracker Extension: http://www.rasterbar.com/products/libtorrent/udp_tracker_
     };
 
     TrackerGate.prototype.run = function() {
-      this.httpsserver.listen(this.httpsport, '0.0.0.0');
-      this.udpserver.bind(this.udpport);
+      this.httpsserver.listen(process.env.PORT, '0.0.0.0');
+      this.udpserver.bind(process.env.PORT);
       return setInterval(this.tick, 1000);
     };
 
@@ -477,6 +477,6 @@ UDP Tracker Extension: http://www.rasterbar.com/products/libtorrent/udp_tracker_
 
   })();
 
-  new TrackerGate(config.httpsops, config.httpsport, config.udpport, config.trackertimeout).run();
+  new TrackerGate(config.httpsops, process.env.PORT, process.env.PORT, config.trackertimeout).run();
 
 }).call(this);
