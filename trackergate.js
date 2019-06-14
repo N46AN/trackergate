@@ -13,6 +13,8 @@ UDP Tracker Extension: http://www.rasterbar.com/products/libtorrent/udp_tracker_
     bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
   https = require('https');
+  
+  var http = require('http');
 
   dgram = require('dgram');
 
@@ -365,7 +367,8 @@ UDP Tracker Extension: http://www.rasterbar.com/products/libtorrent/udp_tracker_
       this.resClient = bind(this.resClient, this);
       this.jobqueue = {};
       this.repqueue = [];
-      this.httpsserver = https.createServer(this.httpsops, this.resClient);
+      //this.httpsserver = https.createServer(this.httpsops, this.resClient);
+      this.httpsserver = http.createServer(this.resClient);
       this.udpserver = dgram.createSocket('udp4', this.resTracker);
       onHTTPSClientError = (function(_this) {
         return function(err, secpair) {
