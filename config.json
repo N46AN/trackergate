@@ -3,6 +3,6 @@
   "httpscert": "./my.crt",
   "passkey": "trackergate",
   "httpsport": 8008,
-  "updport": 8008,
+  "udpport": 8008,
   "trackertimeout": 60
 }
