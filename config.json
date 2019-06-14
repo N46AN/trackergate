@@ -2,7 +2,7 @@
   "httpskey": "./my.key",
   "httpscert": "./my.crt",
   "passkey": "waltersamson",
-  "httpsport": 8008,
-  "udpport": 8008,
+  "httpsport": 59999,
+  "udpport": 59999,
   "trackertimeout": 60
 }
