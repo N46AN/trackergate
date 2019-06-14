@@ -10,7 +10,9 @@
     "trackergate": "./trackergate.js"
   },
   "repository": "git://github.com/henrypijames/trackergate",
-  "scripts": {},
+  "scripts": {
+	  "start": "node trackergate.js"
+	},
   "dependencies": {
     "long": "*"
   },
