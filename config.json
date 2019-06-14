@@ -1,7 +1,7 @@
 {
   "httpskey": "./my.key",
   "httpscert": "./my.crt",
-  "passkey": "waltersamson",
+  "passkey": "ws",
   "httpsport": 59999,
   "udpport": 59999,
   "trackertimeout": 60
