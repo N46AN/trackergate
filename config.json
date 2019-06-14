@@ -1,7 +1,7 @@
 {
   "httpskey": "./my.key",
   "httpscert": "./my.crt",
-  "passkey": "trackergate",
+  "passkey": "waltersamson",
   "httpsport": 8008,
   "udpport": 8008,
   "trackertimeout": 60
